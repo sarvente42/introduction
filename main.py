@@ -5,8 +5,6 @@ try:
         raise Exception('Hours are less than Zero')
     elif hours > 24:
         raise Exception('Hours are more than Twenty Four')
- #я не знаю чому тут не правильно працюють raise-и
-
     elif 0 <= hours < 6:
         print('Good Night')
     elif 6 <= hours < 13:
@@ -18,6 +16,8 @@ try:
 
 except ValueError as vl_er:
     print('Error! Wrong type of function,', vl_er)
+except Exception as ex:
+    print('Error:', ex)
 
 
 
