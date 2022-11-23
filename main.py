@@ -1,1 +1,5 @@
-
+number1 = int(input("meters->"))
+print("centimeters->", int(number1 * 100))
+print("decimeters->", int(number1 * 10))
+print("millimeters->", int(number1 * 1000))
+print("miles->", number1 * 0.00062137)
